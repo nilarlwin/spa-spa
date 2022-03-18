@@ -66,36 +66,49 @@ html,
                 <hr>
                 <div class="customer-app">
                     <ul class="list-group">
-                        <li class="list-group-item d-flex justify-content-between align-items-center pe-0 py-0">customer
+                        <li
+                            class="check_customer_name list-group-item d-flex justify-content-between align-items-center pe-0 py-0">
+                            customer
                             1
-                            <button class="btn btn-sm text-info">Check</button>
+                            <button class="btn btn-sm text-info cus_check_btn" data-cus_id="Customer-1">Check</button>
                         </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center pe-0 py-0">customer
+                        <li
+                            class="check_customer_name list-group-item d-flex justify-content-between align-items-center pe-0 py-0">
+                            customer
                             3
-                            <button class="btn btn-sm text-info">Check</button>
+                            <button class="btn btn-sm text-info cus_check_btn" data-cus_id="Customer-3">Check</button>
                         </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center pe-0 py-0">customer
+                        <li
+                            class="check_customer_name list-group-item d-flex justify-content-between align-items-center pe-0 py-0">
+                            customer
                             4
-                            <button class="btn btn-sm text-info">Check</button>
+                            <button class="btn btn-sm text-info cus_check_btn" data-cus_id="Customer-4">Check</button>
                         </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center pe-0 py-0">customer
+                        <li
+                            class="check_customer_name list-group-item d-flex justify-content-between align-items-center pe-0 py-0">
+                            customer
                             5
-                            <button class="btn btn-sm text-info">Check</button>
+                            <button class="btn btn-sm text-info cus_check_btn" data-cus_id="Customer-5">Check</button>
                         </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center pe-0 py-0">customer
+                        <li
+                            class="check_customer_name list-group-item d-flex justify-content-between align-items-center pe-0 py-0">
+                            customer
                             6
-                            <button class="btn btn-sm text-info">Check</button>
+                            <button class="btn btn-sm text-info cus_check_btn" data-cus_id="Customer-6">Check</button>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="col-10 border-start border-1 border-dark mt-2">
                 <div class="d-flex justify-content-between">
-                    <div class="col-4">
+                    <div class="col-3">
                         <h5 class="p-2">
                             Sale & Service
                         </h5>
                     </div>
+                    <h5 class="p-2 sale_service_header">
+                        Customer-1
+                    </h5>
                     <div class="row col-3">
                         <label class="form-label col-3 my-auto" for="">Date:</label>
                         <input type="type" class="form-control form-control-sm col" value="<?=date('d-m-y')?>" readonly>
@@ -270,19 +283,25 @@ html,
             </div>
             <div class="col-10 d-flex justify-content-between align-items-center">
                 <div class="row col-6">
-                    <label class="form-label col-1 my-auto" for="">Total:</label>
-                    <input type="type" class="form-control form-control-sm col" readonly>
-                    <label class="form-label col-1 my-auto" for="">Paid:</label>
-                    <input type="type" class="form-control form-control-sm col">
-                    <label class="form-label col-2 my-auto" for="">Discount:</label>
-                    <input type="type" class="form-control form-control-sm col">
+                    <div class="col-4">
+                        <label class="form-label col my-auto" for="">Total:</label>
+                        <input type="type" class="form-control form-control-sm col" readonly>
+                    </div>
+                    <div class="col-4">
+                        <label class="form-label col my-auto" for="">Paid:</label>
+                        <input type="type" class="form-control form-control-sm col">
+                    </div>
+                    <div class="col-4">
+                        <label class="form-label col my-auto" for="">Discount:</label>
+                        <input type="type" class="form-control form-control-sm col-2">
+                    </div>
                 </div>
                 <div class="col-2 row">
-                    <div style="height: 110px; width: 110px; background-color:whitesmoke; cursor: pointer;"
+                    <div style="height: 90px; width: 110px; background-color:whitesmoke; cursor: pointer;"
                         class="col d-flex justify-content-center align-items-center border border-1 border-dark me-2">
                         Print
                     </div>
-                    <div style="height: 110px; width: 110px; background-color:whitesmoke; cursor: pointer;"
+                    <div style="height: 90px; width: 110px; background-color:whitesmoke; cursor: pointer;"
                         class="col d-flex justify-content-center align-items-center border border-1 border-dark me-2">
                         Save
                     </div>
