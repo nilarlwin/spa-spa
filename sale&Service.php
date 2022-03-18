@@ -270,25 +270,19 @@ html,
             </div>
             <div class="col-10 d-flex justify-content-between align-items-center">
                 <div class="row col-6">
-                    <div class="col-4">
-                        <label class="form-label col my-auto" for="">Total:</label>
-                        <input type="type" class="form-control form-control-sm col" readonly>
-                    </div>
-                    <div class="col-4"> 
-                        <label class="form-label col my-auto" for="">Paid:</label>
-                        <input type="type" class="form-control form-control-sm col">
-                    </div>
-                    <div class="col-4">
-                        <label class="form-label col my-auto" for="">Discount:</label>
-                        <input type="type" class="form-control form-control-sm col-2">
-                    </div>
+                    <label class="form-label col-1 my-auto" for="">Total:</label>
+                    <input type="type" class="form-control form-control-sm col" readonly>
+                    <label class="form-label col-1 my-auto" for="">Paid:</label>
+                    <input type="type" class="form-control form-control-sm col">
+                    <label class="form-label col-2 my-auto" for="">Discount:</label>
+                    <input type="type" class="form-control form-control-sm col">
                 </div>
                 <div class="col-2 row">
-                    <div style="height: 90px; width: 110px; background-color:whitesmoke; cursor: pointer;"
+                    <div style="height: 110px; width: 110px; background-color:whitesmoke; cursor: pointer;"
                         class="col d-flex justify-content-center align-items-center border border-1 border-dark me-2">
                         Print
                     </div>
-                    <div style="height: 90px; width: 110px; background-color:whitesmoke; cursor: pointer;"
+                    <div style="height: 110px; width: 110px; background-color:whitesmoke; cursor: pointer;"
                         class="col d-flex justify-content-center align-items-center border border-1 border-dark me-2">
                         Save
                     </div>
