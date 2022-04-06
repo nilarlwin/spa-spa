@@ -1,7 +1,7 @@
     <!-- footer area start-->
     <footer>
         <div class="footer-area">
-            <p>© Copyright 2022. All right reserved. create by<a href="https://siriertech.com/"> Sirier Tech</a>.
+            <p>© Copyright 2022. All right reserved. create by<a href=""> Sirier Tech</a>.
             </p>
         </div>
     </footer>
@@ -37,9 +37,14 @@ ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "ee6b7db5b51705a13dc2339db3eda
     <script src="assets/js/script.js"></script>
     <script type="text/javascript" charset="utf8" src="assets/data-table/datatable.js"></script>
     <script>
-    $(document).ready( function () {
+$(document).ready(function() {
     $('#myTable').DataTable();
-    } );
+
+    $('.cus_check_btn').on('click', function() {
+        var cus_id = $(this).data('cus_id');
+        $('.sale_service_header').html(cus_id);
+    })
+});
     </script>
     </body>
 
