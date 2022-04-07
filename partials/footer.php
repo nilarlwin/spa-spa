@@ -8,7 +8,8 @@
     <!-- footer area end-->
     <!-- page container area end -->
     <!-- jquery latest version -->
-    <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+    <!-- <script src="assets/js/vendor/jquery-2.2.4.min.js"></script> -->
+    <script src="assets/js/jqurey-3.6.0/jquery-3.6.0.min.js"></script>
     <!-- bootstrap 4 js -->
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
@@ -43,6 +44,17 @@ $(document).ready(function() {
     $('.cus_check_btn').on('click', function() {
         var cus_id = $(this).data('cus_id');
         $('.sale_service_header').html(cus_id);
+    })
+    $('input[name="item_or_sevice"]').click(() => {
+        let radiocheck = $('input[name="item_or_sevice"]:checked').val();
+        if (radiocheck == 'item') {
+            $('.item-box').removeClass('d-none');
+            $('.service-box').addClass('d-none');
+        } else {
+
+            $('.item-box').addClass('d-none');
+            $('.service-box').removeClass('d-none');
+        }
     })
 });
     </script>
