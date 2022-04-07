@@ -65,7 +65,8 @@ html,
                 </div>
                 <hr>
                 <div class="customer-app">
-                    <ul class="list-group">
+                    <ul class="list-group" style="height: 450px;
+    overflow-y: auto;">
                         <li
                             class="check_customer_name list-group-item d-flex justify-content-between align-items-center pe-0 py-0">
                             customer
@@ -128,7 +129,8 @@ html,
                                     <label for="service" class="form-check-label">Service</label>
                                 </div>
                             </div>
-                            <div class="card-body">
+                            <div class="card-body" style="height: 450px;
+    overflow-y: auto;">
                                 <!-- <select class="form-select">
                                     <option value="">select here ..</option>
                                 </select> -->
@@ -306,15 +308,15 @@ html,
                                 <div class="col-7 row">
                                     <div class="col-12 mt-auto">
                                         <div class="form-group w-100 mb-2 d-flex align-items-center">
-                                            <label for="" class="form-label me-3">lable </label>
+                                            <label for="" class="form-label me-3">Total </label>
                                             <input type="text" class="form-control form-control-sm">
                                         </div>
                                         <div class="form-group w-100 mb-2 d-flex align-items-center">
-                                            <label for="" class="form-label me-3">lable </label>
+                                            <label for="" class="form-label me-3">Paid </label>
                                             <input type="text" class="form-control form-control-sm">
                                         </div>
                                         <div class="form-group w-100 mb-2 d-flex align-items-center">
-                                            <label for="" class="form-label me-3">lable </label>
+                                            <label for="" class="form-label me-3">Discount </label>
                                             <input type="text" class="form-control form-control-sm">
                                         </div>
                                         <div class="form-group d-flex justify-content-between row">
