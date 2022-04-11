@@ -277,7 +277,7 @@ html,
                                                         <th class="text-dark">Unit Price</th>
                                                         <!-- <th style="text-align:center;" class="text-dark">Source</th> -->
                                                         <!-- <th style="text-align:center;">Stock Price</th> -->
-                                                        <th class="text-dark">Staff</th>
+                                                        <th zclass="text-dark">Staff</th>
                                                         <th class="text-dark">Amount</th>
                                                         <th>
                                                             <!-- <a class="btn btn-sm btn-success add_more rounded-circle">
@@ -381,8 +381,7 @@ html,
                 </div>
         </div>
 
-        <<<<<<< HEAD <?php require "./partials/footer.php"; ?>=======<footer class="fixed-bottom m-0 w-100"
-            style="height: 140px; background-color:gainsboro;">
+        <footer class="fixed-bottom m-0 w-100" style="height: 140px; background-color:gainsboro;">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-2 my-auto d-flex justify-content-center align-items-center">
@@ -417,7 +416,6 @@ html,
                     </div>
                 </div>
             </div>
-            </footer>
+        </footer>
 
-            <?php require "./partials/footer.php"; ?>
-            >>>>>>> 8b1cfa24b32c52e5892587b97baa12bb233c3ddf
+        <?php require "./partials/footer.php"; ?>
