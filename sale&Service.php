@@ -277,7 +277,7 @@ html,
                                                         <th class="text-dark">Unit Price</th>
                                                         <!-- <th style="text-align:center;" class="text-dark">Source</th> -->
                                                         <!-- <th style="text-align:center;">Stock Price</th> -->
-                                                        <th zclass="text-dark">Staff</th>
+                                                        <th class="text-dark">Staff</th>
                                                         <th class="text-dark">Amount</th>
                                                         <th>
                                                             <!-- <a class="btn btn-sm btn-success add_more rounded-circle">
