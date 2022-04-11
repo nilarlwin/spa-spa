@@ -35,7 +35,7 @@
                                 <li><a href="./Sale.php">Add</a></li>
                                 <li><a href="./saleList.php">List</a></li>
                             </ul>
-                        </li>
+                        </li> -->
                         <li>
                             <a href="javascript:void(0)" aria-expanded="true"><i
                                     class="ti-dashboard"></i><span>Service</span></a>
@@ -43,7 +43,7 @@
                                 <li><a href="./services.php">Add</a></li>
                                 <li><a href="./servicesList.php">List</a></li>
                             </ul>
-                        </li> -->
+                        </li>
                         <li>
                             <a href="javascript:void(0)" aria-expanded="true"><i
                                     class="ti-user"></i><span>Customer</span></a>

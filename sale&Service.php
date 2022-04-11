@@ -1,4 +1,4 @@
-<?php require "./partials/heading.php";?>
+<?php require "./partials/heading.php"; ?>
 <style>
 .addStaff-wapper,
 .staff-table-wapper {
@@ -50,8 +50,8 @@ html,
         </div>
     </div>
 </div>
-<div class="container-fluid main-area">
-    <div class="card mt-2 me-2">
+<div class="container-fluid" style="background-color:silver">
+    <div class="mt-2 me-2">
         <div class="row">
             <div class="col-2 add-customer-content">
                 <div class="add-customer my-2">
@@ -65,7 +65,8 @@ html,
                 </div>
                 <hr>
                 <div class="customer-app">
-                    <ul class="list-group">
+                    <ul class="list-group" style="height: 450px;
+    overflow-y: auto;">
                         <li
                             class="check_customer_name list-group-item d-flex justify-content-between align-items-center pe-0 py-0">
                             customer
@@ -99,216 +100,238 @@ html,
                     </ul>
                 </div>
             </div>
-            <div class="col-10 border-start border-1 border-dark mt-2">
-                <div class="d-flex justify-content-between">
-                    <div class="col-3">
-                        <h5 class="p-2">
-                            Sale & Service
-                        </h5>
-                    </div>
-                    <h5 class="p-2 sale_service_header">
-                        Customer-1
+            <div class="col-10">
+                <div class="p-2">
+                    <h5>
+                        Voucher Id - 1013102203
                     </h5>
-                    <div class="row col-3">
-                        <label class="form-label col-3 my-auto" for="">Date:</label>
-                        <input type="type" class="form-control form-control-sm col" value="<?=date('d-m-y')?>" readonly>
+                </div>
+                <div class="row d-flex justify-content-between align-items-center">
+                    <div class="col-3">
+                        <h6>Customer name</h6>
+                    </div>
+                    <div class="col-3">
+                        <input type="date" class="form-control form-control-sm col-3">
                     </div>
                 </div>
-                <hr class="mb-0">
-                <div>
-                    <div class="addStaff row mb-2 border-bottom border-1 border-dark">
-                        <div
-                            class="col-3 row d-flex align-items-center border-end border-1 border-dark addStaff-wapper">
-                            <div class="btn-group btn-group-sm w-100 ">
-                                <!-- <input type="text" class="form-control form-control-sm" placeholder="Search Item"> -->
-                                <select class="form-select form-select-sm">
-                                    <option value="" selected>select staff ...</option>
-                                    <option value="">soe soe</option>
-                                    <option value="">soe soe</option>
-                                    <option value="">soe soe</option>
-                                </select>
-                                <button class="btn btn-sm btn-secondary">Add</button>
+                <div class="row mt-3">
+                    <div class="col-5">
+                        <div class="card">
+                            <div class="card-header d-flex align-items-center justify-content-start">
+                                <div class="form-check me-2">
+                                    <input class="form-check-input" type="radio" name="item_or_sevice" id="item"
+                                        value="item">
+                                    <label for="item" class="form-check-label">Item</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="item_or_sevice" id="service"
+                                        value="service">
+                                    <label for="service" class="form-check-label">Service</label>
+                                </div>
                             </div>
-                            <div class="btn-group btn-group-sm">
-                                <select name="" id="" class="form-select form-select-sm">
-                                    <option value="">Select Source</option>
-                                    <option value="">Default</option>
-                                    <option value="">Counter</option>
-                                </select>
-                                <input type="text" class="form-control form-control-sm" placeholder="Search Item">
-                                <button class="btn btn-sm btn-secondary">Add</button>
+                            <div class="card-body" style="height: 450px;
+    overflow-y: auto;">
+                                <!-- <select class="form-select">
+                                    <option value="">select here ..</option>
+                                </select> -->
+                                <div class="item-box row d-none">
+                                    <div class="col-4 item-btn-wapper mb-2">
+                                        <button class="item-button btn btn-secondary">
+                                            item
+                                        </button>
+                                    </div>
+                                    <div class="col-4 item-btn-wapper mb-2">
+                                        <button class="item-button btn btn-secondary">
+                                            item
+                                        </button>
+                                    </div>
+                                    <div class="col-4 item-btn-wapper mb-2">
+                                        <button class="item-button btn btn-secondary">
+                                            item
+                                        </button>
+                                    </div>
+                                    <div class="col-4 item-btn-wapper mb-2">
+                                        <button class="item-button btn btn-secondary">
+                                            item
+                                        </button>
+                                    </div>
+                                    <div class="col-4 item-btn-wapper mb-2">
+                                        <button class="item-button btn btn-secondary">
+                                            item
+                                        </button>
+                                    </div>
+                                    <div class="col-4 item-btn-wapper mb-2">
+                                        <button class="item-button btn btn-secondary">
+                                            item
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="service-box row d-none">
+                                    <div class="col-4 service-btn-wapper mb-2">
+                                        <button class="service-button btn btn-secondary">
+                                            service
+                                        </button>
+                                    </div>
+                                    <div class="col-4 service-btn-wapper mb-2">
+                                        <button class="service-button btn btn-secondary">
+                                            service
+                                        </button>
+                                    </div>
+                                    <div class="col-4 service-btn-wapper mb-2">
+                                        <button class="service-button btn btn-secondary">
+                                            service
+                                        </button>
+                                    </div>
+
+                                </div>
                             </div>
-                            <div class="btn-group btn-group-sm">
-                                <input type="text" class="form-control form-control-sm" placeholder="Search Service">
-                                <button class="btn btn-sm btn-secondary">Add</button>
-                            </div>
-                        </div>
-                        <div class="col-9 row px-0 staff-table-wapper">
-                            <table class="table table-bordered text-center" align="center">
-                                <thead>
-                                    <th>#</th>
-                                    <th>Staff Name</th>
-                                    <th>Bonus</th>
-                                    <th>By name</th>
-                                    <th>Action</th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>
-                                            <input type="text" class="form-control form-control-sm" value="Soe Soe"
-                                                readonly>
-                                        </td>
-                                        <td>
-                                            <input type="number" class="form-control form-control-sm" placeholder="%">
-                                        </td>
-                                        <td>
-                                            <input type="checkbox" class="form-check mx-auto">
-                                        </td>
-                                        <td>
-                                            <a class="btn btn-sm text-danger">
-                                                <i class="fa fa-trash"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>
-                                            <input type="text" class="form-control form-control-sm" value="Soe Soe"
-                                                readonly>
-                                        </td>
-                                        <td>
-                                            <input type="number" class="form-control form-control-sm" placeholder="%">
-                                        </td>
-                                        <td>
-                                            <input type="checkbox" class="form-check mx-auto">
-                                        </td>
-                                        <td>
-                                            <a class="btn btn-sm text-danger">
-                                                <i class="fa fa-trash"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>
-                                            <input type="text" class="form-control form-control-sm" value="Soe Soe"
-                                                readonly>
-                                        </td>
-                                        <td>
-                                            <input type="number" class="form-control form-control-sm" placeholder="%">
-                                        </td>
-                                        <td>
-                                            <input type="checkbox" class="form-check mx-auto">
-                                        </td>
-                                        <td>
-                                            <a class="btn btn-sm text-danger">
-                                                <i class="fa fa-trash"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
                         </div>
                     </div>
-                    <div class="row my-3">
-                        <!-- <div class="col-2">
-
-                        </div> -->
-                        <div class="px-0">
-                            <table align="center" class="table table-bordered mx-auto">
-                                <thead>
-                                    <tr>
-                                        <th class="text-dark">No.</th>
-                                        <th style="text-align:center;" class="text-dark">Item/Service Name</th>
-                                        <th style="text-align:center;" class="text-dark">Quantity</th>
-                                        <th style="text-align:center;" class="text-dark">Price</th>
-                                        <!-- <th style="text-align:center;" class="text-dark">Source</th> -->
-                                        <!-- <th style="text-align:center;">Stock Price</th> -->
-                                        <th class="text-dark">Total</th>
-                                        <th>
-                                            <!-- <a class="btn btn-sm btn-success add_more rounded-circle">
+                    <div class="col-7">
+                        <div class="card mb-2">
+                            <div class="card-body s_item_card">
+                                <table align="center" class="table table-bordered mx-auto text-center">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-dark">No.</th>
+                                            <th class="text-dark">Item Name</th>
+                                            <th class="text-dark">Quantity</th>
+                                            <th class="text-dark">Price</th>
+                                            <!-- <th style="text-align:center;" class="text-dark">Source</th> -->
+                                            <!-- <th style="text-align:center;">Stock Price</th> -->
+                                            <th class="text-dark">Total</th>
+                                            <th>
+                                                <!-- <a class="btn btn-sm btn-success add_more rounded-circle">
                                             <i class="fa fa-plus"></i>
                                         </a> -->
-                                            Action
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody class="addMoreItem">
-                                    <tr>
-                                        <td class="text-dark"><b>1</b></td>
-                                        <td>
-                                            <input type="text" class="form-control form-control-sm" readonly>
-                                        </td>
-                                        <td>
-                                            <input name="quantity[]" id="quantity" type="number"
-                                                class="form-control form-control-sm quantity" required>
-                                        </td>
-                                        <td>
-                                            <input name="price[]" id="price" type="text"
-                                                class="form-control form-control-sm price" readonly>
-                                        </td>
-                                        <!-- <td>
+                                                Action
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="addMoreItem">
+                                        <tr>
+                                            <td class="text-dark"><b>1</b></td>
+                                            <td>
+                                                <input type="text" class="form-control form-control-sm" readonly>
+                                            </td>
+                                            <td>
+                                                <input name="" id="" type="number" class="form-control form-control-sm"
+                                                    required>
+                                            </td>
+                                            <td>
+                                                <input name="" id="" type="text" class="form-control form-control-sm"
+                                                    readonly>
+                                            </td>
+                                            <!-- <td>
                                             <input name="" id="" type=""
                                                 class="form-control form-control-sm discount">
 
-                                        </td> -->
-                                        <td>
-                                            <input name="total_amount[]" id="total_amount" type="text"
-                                                class="form-control form-control-sm total_amount" readonly>
-                                        </td>
-                                        <td>
-                                            <a class="btn btn-sm text-danger">
-                                                <i class="fa fa-trash"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                                            </td> -->
+                                            <td>
+                                                <input name="" id="" type="text" class="form-control form-control-sm "
+                                                    readonly>
+                                            </td>
+                                            <td>
+                                                <a class="btn btn-sm text-danger">
+                                                    <i class="fa fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card mb-2">
+                            <div class="card-body s_service_card">
+                                <table align="center" class="table table-bordered mx-auto text-center">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-dark">No.</th>
+                                            <th class="text-dark">Service</th>
+                                            <th class="text-dark">Qty</th>
+                                            <th class="text-dark">Unit Price</th>
+                                            <!-- <th style="text-align:center;" class="text-dark">Source</th> -->
+                                            <!-- <th style="text-align:center;">Stock Price</th> -->
+                                            <th class="text-dark">Staff</th>
+                                            <th class="text-dark">Amount</th>
+                                            <th>
+                                                <!-- <a class="btn btn-sm btn-success add_more rounded-circle">
+                                            <i class="fa fa-plus"></i>
+                                        </a> -->
+                                                Action
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="addMoreItem">
+                                        <tr>
+                                            <td class="text-dark"><b>1</b></td>
+                                            <td>
+                                                <input type="text" class="form-control form-control-sm" readonly>
+                                            </td>
+                                            <td>
+                                                <input name="" id="" type="number" class="form-control form-control-sm"
+                                                    required>
+                                            </td>
+                                            <td>
+                                                <input name="" id="" type="text" class="form-control form-control-sm"
+                                                    readonly>
+                                            </td>
+                                            <!-- <td>
+                                            <input name="" id="" type=""
+                                                class="form-control form-control-sm discount">
+
+                                            </td> -->
+                                            <td>
+                                                <input name="" id="" type="text" class="form-control form-control-sm"
+                                                    readonly>
+                                            </td>
+                                            <td>
+                                                <input name="" id="" type="text" class="form-control form-control-sm"
+                                                    readonly>
+                                            </td>
+                                            <td>
+                                                <a class="btn btn-sm text-danger">
+                                                    <i class="fa fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card s_invoice mb-2">
+                            <div class="card-body row">
+                                <div class="col-5">
+                                    <label for="remark">Remark</label>
+                                    <textarea name="" id="remark" cols="30" rows="10" style="resize: none;"></textarea>
+                                </div>
+                                <div class="col-7 row">
+                                    <div class="col-12 mt-auto">
+                                        <div class="form-group w-100 mb-2 d-flex align-items-center">
+                                            <label for="" class="form-label me-3">Total </label>
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                        <div class="form-group w-100 mb-2 d-flex align-items-center">
+                                            <label for="" class="form-label me-3">Paid </label>
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                        <div class="form-group w-100 mb-2 d-flex align-items-center">
+                                            <label for="" class="form-label me-3">Discount </label>
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                        <div class="form-group d-flex justify-content-between row">
+                                            <button class="btn btn-secondary col-4" style="height: 80px;">print</button>
+                                            <button class="btn btn-secondary col-7" style="height: 80px;">print</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
 </div>
 
-<footer class="fixed-bottom m-0 w-100" style="height: 140px; background-color:gainsboro;">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-2 my-auto d-flex justify-content-center align-items-center">
-                <textarea name="" id="" rows="5" class="form-control" placeholder="Remark"
-                    style="resize: none;"></textarea>
-            </div>
-            <div class="col-10 d-flex justify-content-between align-items-center">
-                <div class="row col-6">
-                    <div class="col-4">
-                        <label class="form-label col my-auto" for="">Total:</label>
-                        <input type="type" class="form-control form-control-sm col" readonly>
-                    </div>
-                    <div class="col-4">
-                        <label class="form-label col my-auto" for="">Paid:</label>
-                        <input type="type" class="form-control form-control-sm col">
-                    </div>
-                    <div class="col-4">
-                        <label class="form-label col my-auto" for="">Discount:</label>
-                        <input type="type" class="form-control form-control-sm col-2">
-                    </div>
-                </div>
-                <div class="col-2 row">
-                    <div style="height: 90px; width: 110px; background-color:whitesmoke; cursor: pointer;"
-                        class="col d-flex justify-content-center align-items-center border border-1 border-dark me-2">
-                        Print
-                    </div>
-                    <div style="height: 90px; width: 110px; background-color:whitesmoke; cursor: pointer;"
-                        class="col d-flex justify-content-center align-items-center border border-1 border-dark me-2">
-                        Save
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<?php require "./partials/footer.php";?>
+<?php require "./partials/footer.php"; ?>

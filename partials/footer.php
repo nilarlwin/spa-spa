@@ -8,7 +8,8 @@
     <!-- footer area end-->
     <!-- page container area end -->
     <!-- jquery latest version -->
-    <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+    <!-- <script src="assets/js/vendor/jquery-2.2.4.min.js"></script> -->
+    <script src="assets/js/jqurey-3.6.0/jquery-3.6.0.min.js"></script>
     <!-- bootstrap 4 js -->
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
@@ -36,7 +37,8 @@ ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "ee6b7db5b51705a13dc2339db3eda
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/script.js"></script>
     <script type="text/javascript" charset="utf8" src="assets/data-table/datatable.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script> !-->
+    <script src="assets/js/select2.min.js"></script>
     <script>
 $(document).ready(function() {
     $('#myTable').DataTable();
@@ -67,6 +69,6 @@ $(document).ready(function() {
 
 </script>
 
-    </body>
+</body>
 
-    </html>
+</html>

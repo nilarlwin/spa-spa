@@ -38,45 +38,40 @@
     <!-- page container area start -->
     <div class="page-container">
         <!-- sidebar menu area start -->
-        <?php require "./components/slidermenu.php"?>
+        <?php require "./components/slidermenu.php" ?>
         <!-- sidebar menu area end -->
         <!-- main content area start -->
         <div class="main-content">
             <!-- header area start -->
-            <?php require "./components/headerArea.php"?>
+            <?php require "./components/headerArea.php" ?>
             <!-- header area end -->
 
             <div class="main-content-inner">
-            <div class="mt-3 mb-2 d-flex align-items-end">
-             <div class="form-group row mr-3">
-                <label class="col-form-label">From Date:</label>
-                <div class="col-sm-8">
-                   <input type="date" class="form-control form-control-sm" />
-                 </div>
-             </div>
-             <div class="form-group row">
-                <label class="col-form-label">To Date:</label>
-                <div class="col-sm-8">
-                   <input type="date" class="form-control form-control-sm" />
-                 </div>
-             </div>
-             <div class="form-group row">
-                <div class="col-sm-12">
-                   <input type="submit" class="form-control form-control-sm btn btn-primary" value="Search"/>
-                 </div>
-             </div>
-            </div>
+                <div class="mt-3 mb-2 d-flex align-items-end">
+                    <div class="form-group row mr-3">
+                        <label class="col-form-label">From Date:</label>
+                        <div class="col-sm-8">
+                            <input type="date" class="form-control form-control-sm" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label">To Date:</label>
+                        <div class="col-sm-8">
+                            <input type="date" class="form-control form-control-sm" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-12">
+                            <input type="submit" class="form-control form-control-sm btn btn-primary" value="Search" />
+                        </div>
+                    </div>
+                </div>
                 <table class="table table-hover progress-table text-center" id="myTable">
                     <thead class="text-uppercase">
                         <tr>
                             <th scope="col">ID</th>
                             <th scope="col">Name</th>
                             <th scope="col">Price</th>
-                            <th scope="col">Customer Name</th>
-                            <th scope="col">Stuff Name</th>
-                            <th scope="col">Bonus Percent</th>
-                            <th scope="col">Date-Time</th>
-                            <th scope="col">By Name/Not</th>
                             <th scope="col">Remark</th>
                         </tr>
                     </thead>
@@ -85,22 +80,17 @@
                             <th>1</th>
                             <td>Hair cut</td>
                             <td>15000 ks</td>
-                            <td>Minkhant</td>
-                            <td>Kyi Pyar</td>
-                            <td>25%</td>
-                            <td>01/30/2022, 08:52 PM</td>
-                            <td>By Name</td>
                             <td>
                                 -----
                             </td>
                     </tbody>
                 </table>
                 <div>
-                <a href="sale&Service.php"
-                    class="btn mt-auto btn-info ml-auto mb-2 col-sm-1 d-flex justify-content-center align-items-center">
-                    <i class="ti-plus mr-2 fw-bold"></i> Add
-                </a>
-            </div>
+                    <a href="sale&Service.php"
+                        class="btn mt-auto btn-info ml-auto mb-2 col-sm-1 d-flex justify-content-center align-items-center">
+                        <i class="ti-plus mr-2 fw-bold"></i> Add
+                    </a>
+                </div>
             </div>
             <!-- main content area end -->
         </div>
@@ -141,48 +131,50 @@
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/scripts.js"></script>
         <script type="text/javascript" charset="utf8" src="assets/data-table/datatable.js"></script>
-    <script>
-    $(document).ready( function () {
-    $('#myTable').DataTable();
-    } );
-    </script>
-<!-- Code injected by live-server -->
-<script type="text/javascript">
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script></body>
+        <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+        </script>
+        <!-- Code injected by live-server -->
+        <script type="text/javascript">
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function() {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() ==
+                            "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date()
+                                .valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function(msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        } else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+        </script>
+</body>
 
 </html>

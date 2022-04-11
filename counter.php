@@ -1,35 +1,38 @@
-<?php require "./partials/heading.php"?>
+<?php require "./partials/heading.php" ?>
 <style>
- .resultContainer {
-  background-color: #fff;
-  position: absolute;
-  z-index: 100;
-  top:150px;
-  right:40px;
-  /* transform: translate-Y(-50%); */
+.resultContainer {
+    background-color: #fff;
+    position: absolute;
+    z-index: 100;
+    top: 150px;
+    right: 40px;
+    /* transform: translate-Y(-50%); */
 
 }
+
 .productItemContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 10px;
-  height: 50px;
-  border-bottom: 1px solid lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    height: 50px;
+    border-bottom: 1px solid lightgray;
 }
-.productName{
-  font-size: 14px;
-  width: 80%;
+
+.productName {
+    font-size: 14px;
+    width: 80%;
 }
-.productImage{
-  height:80%;
+
+.productImage {
+    height: 80%;
 }
 </style>
 <div class="page-container">
-    <?php require "./components/slidermenu.php"?>
+    <?php require "./components/slidermenu.php" ?>
     <!-- <div class="main-content"> -->
-    <?php require "./components/headerArea.php"?>
+    <?php require "./components/headerArea.php" ?>
     <!-- <div class="main-content-inner"> -->
     <div class="card bg-light">
         <!-- /.card-header -->
@@ -40,9 +43,9 @@
 
                 <div class="form-group row">
                     <label for="Name" class="form-label col-sm-2">Item Name :</label>
-                    <select id='selItem' class="form-control col-sm-10 mb-2">
+                    <select id='selItem'>
                       <option value='0'>Select Item</option> 
-                      <option value='1'>Hearblin</option> 
+                      <option value='1'>Hearblin</option>
                       <option value='2'>Follow Me</option> 
                       <option value='3'>Sun Silk</option> 
                       <option value='4'>Doctor In</option> 
@@ -82,4 +85,4 @@
     <!-- </div> -->
     <!-- </div> -->
 </div>
-<?php require "./partials/footer.php"?>
+<?php require "./partials/footer.php" ?>

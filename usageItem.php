@@ -1,8 +1,8 @@
-<?php require "./partials/heading.php"?>
+<?php require "./partials/heading.php" ?>
 <div class="page-container">
-    <?php require "./components/slidermenu.php"?>
+    <?php require "./components/slidermenu.php" ?>
     <!-- <div class="main-content"> -->
-    <?php require "./components/headerArea.php"?>
+    <?php require "./components/headerArea.php" ?>
     <!-- <div class="main-content-inner"> -->
     <div class="card bg-light">
         <!-- /.card-header -->
@@ -31,6 +31,14 @@
                     <input class="form-control col-sm-10 mb-2" type="number" id="cost" />
                 </div>
                 <div class="form-group row">
+                    <label for="items code" class="form-label col-sm-2">Source :</label>
+                    <select name="" id="" class="form-control col-sm-10 mb-2">
+                        <option value="" selected>Select Source</option>
+                        <option value="" class="">Counter</option>
+                        <option value="" class="">Default</option>
+                    </select>
+                </div>
+                <div class="form-group row">
                     <label for="date" class="form-label col-sm-2">Date :</label>
                     <input class="form-control col-sm-10 mb-2" type="date" id="date" />
                 </div>
@@ -56,4 +64,4 @@
     <!-- </div> -->
     <!-- </div> -->
 </div>
-<?php require "./partials/footer.php"?>
+<?php require "./partials/footer.php" ?>
