@@ -40,9 +40,17 @@
 
                 <div class="form-group row">
                     <label for="Name" class="form-label col-sm-2">Item Name :</label>
-                    <input class="form-control col-sm-10 mb-2 autoCompleteInput" type="text" id="Name" placeholder="search..."/>
-                    <div class="resultContainer"></div>
+                    <select id='selItem' class="form-control col-sm-10 mb-2">
+                      <option value='0'>Select Item</option> 
+                      <option value='1'>Hearblin</option> 
+                      <option value='2'>Follow Me</option> 
+                      <option value='3'>Sun Silk</option> 
+                      <option value='4'>Doctor In</option> 
+                      <option value='5'>Miss</option> 
+                      <option value='6'>29 Shampoo</option> 
+                   </select>
                 </div>
+
                 <div class="form-group row">
                     <label for="Price" class="form-label col-sm-2">Price :</label>
                     <input class="form-control col-sm-10 mb-2" type="text" id="Price" />
@@ -68,6 +76,7 @@
                 </div>
                 <!-- /.card-footer -->
             </div>
+
         </form>
     </div>
     <!-- </div> -->

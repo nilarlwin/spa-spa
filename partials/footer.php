@@ -36,6 +36,7 @@ ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "ee6b7db5b51705a13dc2339db3eda
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/script.js"></script>
     <script type="text/javascript" charset="utf8" src="assets/data-table/datatable.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
     <script>
 $(document).ready(function() {
     $('#myTable').DataTable();
@@ -46,6 +47,26 @@ $(document).ready(function() {
     })
 });
     </script>
+
+
+<script>
+    $(document).ready(function(){
+ 
+ // Initialize select2
+ $("#selItem").select2();
+
+ // Read selected option
+ $('#but_read').click(function(){
+   var username = $('#selItem option:selected').text();
+   var userid = $('#selItem').val();
+
+   $('#result').html("id : " + userid + ", name : " + username);
+
+ });
+});
+
+</script>
+
     </body>
 
     </html>
