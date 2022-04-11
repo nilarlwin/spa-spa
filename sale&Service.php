@@ -55,7 +55,7 @@ html,
         <div class="row">
             <div class="col-2 add-customer-content">
                 <div class="add-customer my-2">
-                    <div class="btn-group w-100">
+                    <div class="btn-group ">
                         <!-- <input type="text" class="form-control form-control-sm"> -->
                         <select name="" id="" class="form-select form-select-sm">
                             <option value="">select customer ...</option>
@@ -301,27 +301,43 @@ html,
                         </div>
                         <div class="card s_invoice mb-2">
                             <div class="card-body row">
-                                <div class="col-5">
+                                <div class="col-5 row me-2">
                                     <label for="remark">Remark</label>
-                                    <textarea name="" id="remark" cols="30" rows="10" style="resize: none;"></textarea>
+                                    <textarea name="" id="remark" cols="30" class="col" rows="10"
+                                        style="resize-y: none;"></textarea>
                                 </div>
                                 <div class="col-7 row">
                                     <div class="col-12 mt-auto">
-                                        <div class="form-group w-100 mb-2 d-flex align-items-center">
-                                            <label for="" class="form-label me-3">Total </label>
-                                            <input type="text" class="form-control form-control-sm">
+                                        <div
+                                            class="form-group mb-2 d-flex align-items-center justify-content-between row mb-2">
+                                            <div class="col-3 text-center">
+                                                <label for="" class="form-label">Total: </label>
+                                            </div>
+                                            <div class="col-9">
+                                                <input type="text" class="col-7 form-control form-control-sm">
+                                            </div>
                                         </div>
-                                        <div class="form-group w-100 mb-2 d-flex align-items-center">
-                                            <label for="" class="form-label me-3">Paid </label>
-                                            <input type="text" class="form-control form-control-sm">
+                                        <div
+                                            class="form-group mb-2 d-flex align-items-center justify-content-between row mb-2">
+                                            <div class="col-3 text-center">
+                                                <label for="" class="form-label">Paid: </label>
+                                            </div>
+                                            <div class="col-9">
+                                                <input type="text" class="col-7 form-control form-control-sm">
+                                            </div>
                                         </div>
-                                        <div class="form-group w-100 mb-2 d-flex align-items-center">
-                                            <label for="" class="form-label me-3">Discount </label>
-                                            <input type="text" class="form-control form-control-sm">
+                                        <div
+                                            class="form-group mb-2 d-flex align-items-center justify-content-between row mb-2">
+                                            <div class="col-3 text-center">
+                                                <label for="" class="form-label">Left: </label>
+                                            </div>
+                                            <div class="col-9">
+                                                <input type="text" class="col-7 form-control form-control-sm">
+                                            </div>
                                         </div>
                                         <div class="form-group d-flex justify-content-between row">
                                             <button class="btn btn-secondary col-4" style="height: 80px;">print</button>
-                                            <button class="btn btn-secondary col-7" style="height: 80px;">print</button>
+                                            <button class="btn btn-secondary col-7" style="height: 80px;">Save</button>
                                         </div>
                                     </div>
                                 </div>

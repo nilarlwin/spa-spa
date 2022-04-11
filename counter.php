@@ -1,35 +1,38 @@
-<?php require "./partials/heading.php"?>
+<?php require "./partials/heading.php" ?>
 <style>
- .resultContainer {
-  background-color: #fff;
-  position: absolute;
-  z-index: 100;
-  top:150px;
-  right:40px;
-  /* transform: translate-Y(-50%); */
+.resultContainer {
+    background-color: #fff;
+    position: absolute;
+    z-index: 100;
+    top: 150px;
+    right: 40px;
+    /* transform: translate-Y(-50%); */
 
 }
+
 .productItemContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 10px;
-  height: 50px;
-  border-bottom: 1px solid lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    height: 50px;
+    border-bottom: 1px solid lightgray;
 }
-.productName{
-  font-size: 14px;
-  width: 80%;
+
+.productName {
+    font-size: 14px;
+    width: 80%;
 }
-.productImage{
-  height:80%;
+
+.productImage {
+    height: 80%;
 }
 </style>
 <div class="page-container">
-    <?php require "./components/slidermenu.php"?>
+    <?php require "./components/slidermenu.php" ?>
     <!-- <div class="main-content"> -->
-    <?php require "./components/headerArea.php"?>
+    <?php require "./components/headerArea.php" ?>
     <!-- <div class="main-content-inner"> -->
     <div class="card bg-light">
         <!-- /.card-header -->
@@ -40,7 +43,8 @@
 
                 <div class="form-group row">
                     <label for="Name" class="form-label col-sm-2">Item Name :</label>
-                    <input class="form-control col-sm-10 mb-2 autoCompleteInput" type="text" id="Name" placeholder="search..."/>
+                    <input class="form-control col-sm-10 mb-2 autoCompleteInput" type="text" id="Name"
+                        placeholder="search..." />
                     <div class="resultContainer"></div>
                 </div>
                 <div class="form-group row">
@@ -68,9 +72,23 @@
                 </div>
                 <!-- /.card-footer -->
             </div>
+
+            <select class="select" data-mdb-filter="true">
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+                <option value="6">Six</option>
+                <option value="7">Seven</option>
+                <option value="8">Eight</option>
+                <option value="9">Nine</option>
+                <option value="10">Ten</option>
+            </select>
+
         </form>
     </div>
     <!-- </div> -->
     <!-- </div> -->
 </div>
-<?php require "./partials/footer.php"?>
+<?php require "./partials/footer.php" ?>
