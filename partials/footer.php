@@ -62,24 +62,29 @@ $(document).ready(function() {
     </script>
 
 
-<script>
-    $(document).ready(function(){
- 
- // Initialize select2
- $("#selItem").select2();
+    <script>
+$(document).ready(function() {
 
- // Read selected option
- $('#but_read').click(function(){
-   var username = $('#selItem option:selected').text();
-   var userid = $('#selItem').val();
+    // Initialize select2
+    $("#selItem").select2();
 
-   $('#result').html("id : " + userid + ", name : " + username);
+    // Read selected option
+    $('#but_read').click(function() {
+        var username = $('#selItem option:selected').text();
+        var userid = $('#selItem').val();
 
- });
+        $('#result').html("id : " + userid + ", name : " + username);
+
+    });
 });
 
-</script>
 
-</body>
+$('.addStaff').click(function() {
+    // alert();
+    $('#suffAddModal').modal('show');
+})
+    </script>
 
-</html>
+    </body>
+
+    </html>

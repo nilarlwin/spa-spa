@@ -282,8 +282,9 @@ html,
 
                                             </td> -->
                                             <td>
-                                                <input name="" id="" type="text" class="form-control form-control-sm"
-                                                    readonly>
+                                                <input type="button" name="" id="" type="text"
+                                                    class="btn btn-info btn-sm form-control form-control-sm addStaff"
+                                                    value="Stuff">
                                             </td>
                                             <td>
                                                 <input name="" id="" type="text" class="form-control form-control-sm"
@@ -333,5 +334,47 @@ html,
         </div>
     </div>
 </div>
-
+<!-- suffmodal -->
+<!-- Modal -->
+<div class="modal fade" id="suffAddModal" tabindex="-1" role="dialog" aria-labelledby="suffAddModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="suffAddModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="d-flex justify-content-end">
+                    <select name="" id="" class="form-select form-select-sm">
+                        <option value="">soe soe</option>
+                    </select>
+                    <input type="button" class="btn btn-sm btn-info" value="add">
+                </div>
+                <table class="table text-center">
+                    <thead>
+                        <!-- <th> -->
+                        <td>#</td>
+                        <td>name</td>
+                        <!-- <td>name</td> -->
+                        <!-- </th> -->
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>soe soe</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- suffmodal -->
 <?php require "./partials/footer.php"; ?>
