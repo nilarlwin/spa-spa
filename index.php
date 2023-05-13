@@ -76,7 +76,7 @@
                             <div class="row">
                                 <div class="col-sm-7 report_text">
                                     <h3 class="text-light">37</h3>
-                                    <p class="text-light">Today Sale</p>
+                                    <p class="text-light">Sale</p>
                                 </div>
                                 <div class="col-sm-5 report_icons_sale">
                                     <i class="fa fa-credit-card"></i>
